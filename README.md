@@ -4,9 +4,40 @@ Repo to house the training scripts for our YOLO model
 # Installation
 
 Clone this repo by running
+
 ```bash
-git clone
+git clone git@github.com:Louis-Chevalier/CPS843-PPE-Detection.git
 ```
+Navigate to the project directory and run the command to create a new python virtual enviromnment.
+```bash
+python3 -m venv .venv
+```
+
+To enter the virtual environment you must run 
+```bash
+source .venv/bin/active
+```
+> [!IMPORTANT]
+> You must run the above command before first running the scripts (i.e., if you reboot your computer or open a new terminal window)
+
+Next install the necessary python libraries
+```bash
+pip install ultralytics
+```
+> [!NOTE]
+> YOU ARE NOT DONE.
+> Ensure you are on a linux distro compatible with 
+> If you are running an AMD gpu like I am you need to follow the steps to install ROCm
+> [AMD guide to installing ROCm](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html)
+>
+> Ensure you also install the ROCm package in your python virutal environment
+> ```bash
+> pip install rocm
+> ```
+> 
+
+
+This will give you the necessary models and scripts needed to run the YOLOv11 model
 
 # Roboflow
 Go to the workspace and click on `Versions` tab and click on `Create new Version`.
@@ -42,5 +73,17 @@ Lastly, unzip the files into the git directory
 ```bash
 unzip ~/Downloads/PPE.v1i.yolov11.zip -d ~/CPS843-PPE-Detection/
 ```
+
+Go into the project directory.
+
+```bash
+cd CPS843-PPE-Detection/
+```
+You should see that the directory is already populated with the folders and most importantly the `data.yaml`
+
+<img width="808" height="42" alt="image" src="https://github.com/user-attachments/assets/b84ee24e-48b1-4c83-9853-5a893924f38f" />
+
+
+
 
 
