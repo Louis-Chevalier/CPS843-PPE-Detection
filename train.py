@@ -4,13 +4,13 @@ model = YOLO("yolo11m.pt")
 
 model.train(
     data='./data.yaml', 
-    epochs=30,
+    epochs=15,
     batch=16,
     imgsz=640,
     device='cuda:0',
     #device='cpu',
     name='yolo_v11x_V01',
-    project='trained_models/yolo_v11_V01',
+    project='trained_models/yolo_v1_V01',
     save_period=5,
     amp=False,
     workers=0,

@@ -209,9 +209,8 @@ __marimo__/
 # YOLO folders
 test/
 train/
-trained_models/
 valid/
 data.yaml
 README.dataset.txt
 README.roboflow.txt
-
+*.pt

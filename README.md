@@ -31,10 +31,16 @@ pip install ultralytics
 > [AMD guide to installing ROCm](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html)
 >
 > Ensure you also install the ROCm package in your python virutal environment
+> 
 > ```bash
-> pip install rocm
+> pip install wheel setuptools
 > ```
 > 
+> And the following as per the [PyTorch guide](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/3rd-party/pytorch-install.html)
+>
+> ```bash
+>  pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/rocm7.0
+> ```
 
 
 This will give you the necessary models and scripts needed to run the YOLOv11 model
@@ -84,6 +90,15 @@ You should see that the directory is already populated with the folders and most
 <img width="808" height="42" alt="image" src="https://github.com/user-attachments/assets/b84ee24e-48b1-4c83-9853-5a893924f38f" />
 
 
+# Train
+
+To train the model on the dataset simply run
+
+```bash
+python3 train.py
+```
+
+# Predict
 
 
 
