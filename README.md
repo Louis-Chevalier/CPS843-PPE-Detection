@@ -95,7 +95,12 @@ You should see that the directory is already populated with the folders and most
 To train the model on the dataset simply run
 
 ```bash
-python3 train.py
+python3 train.py trained_model_name location_model_size
+```
+
+Thus to train a YOLO model using the YOLO11n size looks like this:
+```bash
+python3 train.py sample_model_n ./yolo11n.pt
 ```
 
 # Predict
