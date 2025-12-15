@@ -1,6 +1,14 @@
 # CPS843-PPE-Detection
 Repo to house the training scripts for our YOLO model
 
+
+# Test Results
+
+Link to the Google Drive with the test results:
+```
+https://drive.google.com/drive/folders/13XorQ8ePIG2wy0UVAimjc1wL8P9X5nif?usp=drive_link
+```
+
 # Installation
 
 Clone this repo by running
@@ -102,11 +110,3 @@ Thus to train a YOLO model using the YOLO11n size looks like this:
 ```bash
 python3 train.py sample_model_n ./yolo11n.pt
 ```
-
-# Test Results
-
-Link to the Google Drive with the test results:
-```
-https://drive.google.com/drive/folders/13XorQ8ePIG2wy0UVAimjc1wL8P9X5nif?usp=drive_link
-```
-
