@@ -110,7 +110,3 @@ Link to the Google Drive with the test results:
 https://drive.google.com/drive/folders/13XorQ8ePIG2wy0UVAimjc1wL8P9X5nif?usp=drive_link
 ```
 
-# Predict
-
-
-
