@@ -31,8 +31,3 @@ model.train(
 
 # Evaluate the model
 metrics = model.val()
-
-# Print validation metrics
-print("Validation Results:")
-for key, value in metrics.items():
-    print(f"{key}: {value}")
